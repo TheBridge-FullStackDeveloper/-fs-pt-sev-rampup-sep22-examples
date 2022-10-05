@@ -1,0 +1,38 @@
+h1 {
+    color: green;
+    font: 40px italic "Tahoma, Geneva, Verdana" normal;
+    /*serif
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    */
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+h2 {
+    color: lightgreen;
+    background-color: green;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+time {
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    font-size: 5px;
+}
