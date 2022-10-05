@@ -1,6 +1,8 @@
 h1 {
     color: green;
-    font: 40px italic "Tahoma, Geneva, Verdana" normal;
+    font: italic normal 40px "Tahoma, Geneva, Verdana";
+    
+    
     /*serif
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
