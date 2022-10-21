@@ -1,0 +1,47 @@
+:root {
+    --main-gap: 1.5rem;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: var(--main-gap);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% 1fr; 
+    grid-gap: .4rem;
+    justify-content: space-around;
+    
+}
+
+main > * {
+    grid-column: span 2;
+    padding: var(--main-gap);
+}
+
+main p {
+    margin: var(--main-gap) 0;
+}
+
+header { background-color: #03a9f4; }
+.hero { background-color: #d22b1f; }
+section { background-color: #129a22; }
+aside { background-color: #673ab7; }
+footer { background-color: #616161; }
+
+
+@media (min-width: 768px) {
+   main > section,
+   main > aside {
+    grid-column: span 1;
+   }
+}
+
+@media (min-width: 1024px) {
+   section { margin-left: 4rem;}
+   aside { margin-right: 4rem; }
+}
