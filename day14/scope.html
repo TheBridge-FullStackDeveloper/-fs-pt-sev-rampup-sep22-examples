@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="script.js"></script>
+    
+    
+    <script>
+        console.log("2")
+    </script>
+
+
+    <script>
+        
+        console.log("3")
+        
+        const name = "Antonio" 
+        let age; 
+
+        let texto = "perro"
+        
+        if(true) {
+            let texto; 
+
+            function vamos() {
+                console.log("rafa")
+            }
+
+            console.log(texto) 
+        }
+
+        vamos()
+
+
+       
+
+ 
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function leer(texto) {
+            let libro = "Principito"
+            console.log(name) 
+        }
+
+        leer("ey")
+
+        //console.log(libro)
+        //console.log(texto)
+        
+        // HOISTING 
+
+        console.log(suma(3,5))
+
+        function suma(a, b) {
+            return a + b
+        }
+        
+        function calculadora() {
+            function resta(a, b) {
+                console.log(a - b)
+            }
+            resta(3,1)  
+        }
+
+    calculadora()
+    console.log("TErmine")
+    
+    //resta()
+
+        const nombre = "Manuel";        
+        const primerApellido = "López"
+        const segundoApellido = "García"
+
+        function nombrar(nombre) {
+          
+            const primerApellido = "Ramirez"
+
+            function getApellido() {
+                let apellido = ""    
+                apellido += getPrimerApellido("Hamilton") + " "
+    
+                const primerApellido = "Alonso"
+                
+                function getPrimerApellido(primerApellido) {
+                    return primerApellido
+                }
+                
+                apellido += getSegundoApellido(primerApellido)
+                
+                function getSegundoApellido(primerApellido) {
+                    return primerApellido
+                }
+
+                return apellido
+            }
+            console.log(nombre + " " + getApellido())
+        }
+
+        nombrar("Frank")
+
+// Antonio:          Manuel Ramirez Hamilton
+// Gonzalo:          Manuel Ramirez Hamilton
+// Ivan:             Manuel Hamilton Ramirez
+// Manuel Molina:    Manuel Alonso Hamilton
+// Manuel Rodriguez: Frank Hamilton Alonso
+// Sergio:           Frank Alonso Hamilton
+// Manuel            Frank Hamilton Alonso   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    //console.log("4")
+
+</script>

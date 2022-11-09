@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select id="lista">
+
+
+
+
+    </select>
+
+
+
+    <script>
+
+        const listaDOMEl = document.getElementById('lista')
+
+        for (let i=0; i < 10; i++) {
+            listaDOMEl.innerHTML += "<option>hola " + i + "</option>";
+        }
+
+
+        listaDOMEl.style.color = "red"
+        
+
+
+    </script>
+
+</body>
+</html>
