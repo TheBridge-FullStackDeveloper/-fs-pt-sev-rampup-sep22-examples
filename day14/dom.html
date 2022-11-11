@@ -21,8 +21,12 @@
 
         const listaDOMEl = document.getElementById('lista')
 
+        function printOption(i) {
+            return "<option>hola " + i + "</option>";
+        }
+
         for (let i=0; i < 10; i++) {
-            listaDOMEl.innerHTML += "<option>hola " + i + "</option>";
+            listaDOMEl.innerHTML += printOption(i)
         }
 
 
