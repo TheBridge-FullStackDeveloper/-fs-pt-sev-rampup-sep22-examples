@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            background: linear-gradient(#00ff00, #0000ff);
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+          
+          
+        }
+        section {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <section id="canvas">
+
+    </section>
+
+
+    <script>
+
+        // const ball = document.getElementById('ball')
+        // ball.style.left = "20px"
+        
+        // let posX = parseInt(ball.style.left, 10)
+
+        
+        // setInterval(function() {
+        //     ball.style.left = posX++ + "px"
+        //     ball.style.transform = "rotate("+ posX + "deg)"
+        // }, 10)
+
+
+
+        //document.createElement('div')
+
+        class Ball {
+
+            constructor() {
+
+                const canvas = document.getElementById('canvas')
+
+                const ball = document.createElement('div')
+               
+                this.posX = Math.floor(Math.random() * 400);
+                this.posY = Math.floor(Math.random() * 400);
+
+                ball.style.top = this.posY + "px"
+                ball.style.left = this.posX + "px"
+
+                canvas.appendChild(ball)
+
+                this.ball = ball
+
+            }
+        }
+
+        
+          Array(1000).fill().map(i => new Ball())
+    </script>
+</body>
+</html>

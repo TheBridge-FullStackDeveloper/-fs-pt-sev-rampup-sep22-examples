@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        
+        body {
+            margin-top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <img id="gato" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Stray_calico_cat_near_Sagami_River-01.jpg/640px-Stray_calico_cat_near_Sagami_River-01.jpg" alt="Que pasa soy un gato">
+
+    <script>
+
+        const box = document.getElementById('box')
+
+        const gato = document.getElementById('gato')
+
+        console.log(box)
+
+
+        box.innerHTML = "<ul><li>dsf</li></ul>"
+
+
+        gato.src = "https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg"
+
+        box.style.color = "red"
+        
+        box.style.marginTop = "1000px"
+        console.log(box.style.marginTop)
+
+        const nuevoDiv = document.createElement('div')
+
+        nuevoDiv.style.padding = "200px"
+        nuevoDiv.innerText = "Perros"
+
+        box.appendChild(nuevoDiv)
+
+        
+    </script>
+    
+</body>
+</html>

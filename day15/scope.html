@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // MEMORIA SCOPE 
+
+        const nombre = "Pedro"
+        let edad = 19
+        
+        const pelicula = [1,2,3]
+
+        // SCOPE DE BLOQUE 1er IF
+        if (true) { 
+            
+            
+
+
+
+            // SCOPE DE BLOQUEE QUE ES EL 2 IF
+            if(true) {
+                
+                let mascota;
+                console.log(mascota)
+            }
+          
+        }
+
+      
+        //console.log(mascota)
+   
+
+        function saluda(argumento, nombre) {
+            console.log(nombre)
+            console.log("hola " + argumento);
+
+
+            function saludita() {
+                console.log("EEEE")
+
+            }
+        } 
+
+        console.log(saluda)
+
+       
+
+        
+        
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
