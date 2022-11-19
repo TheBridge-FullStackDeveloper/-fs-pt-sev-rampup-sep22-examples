@@ -1,5 +1,5 @@
 class Background {
-    constructor(w, h, ctx){
+    constructor(canvasW, canvasH, ctx){
         console.log("Background creado");
 
         this.ctx = ctx
@@ -8,8 +8,8 @@ class Background {
         this.img.src = "./img/bg.png"
 
         // Tamaño imagen
-        this.w = w
-        this.h = h
+        this.w = canvasW
+        this.h = canvasH
 
         // Posición inicial
         this.x = 0
@@ -19,13 +19,7 @@ class Background {
     }
 
     draw() {
-        this.ctx.drawImage(
-            this.img, 
-            this.x, 
-            this.y, 
-            this.w,
-            this.h
-        )
+        this.ctx.drawImage(this.img, this.x, this.y, this.w, this.h)
 
         this.ctx.drawImage(
             this.img, 
@@ -38,8 +32,13 @@ class Background {
 
     move() {
         this.x -= this.dx
+
+        if (this.x <= -this.w) this.x = 0
     }
-
-
-    
+   
 }
+
+
+
+
+
