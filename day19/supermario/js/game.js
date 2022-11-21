@@ -20,7 +20,7 @@ const Game = {
     start: function() {
         this.reset()
 
-        // Borra y pinta el canvas this.fps veces por segundo
+        // Bucle de renderizado
         this.interval = setInterval(() => {
             this.clear()
 
@@ -63,7 +63,6 @@ const Game = {
         })
     },
 
-
     drawAll: function () {
         this.background.draw()
         this.player.draw(this.frameCounter)
@@ -83,15 +82,15 @@ const Game = {
 
     isCollision() {
         return this.obstacles.some((obstacle) => {
-            return (this.player.x + this.player.w >= obstacle.x &&
-                    this.player.x <= obstacle.x + obstacle.w &&
-                    this.player.y + this.player.h - 20 >= obstacle.y &&
-                    this.player.y <= obstacle.y + obstacle.h
+            return (
+                this.player.x + this.player.w >= obstacle.x &&
+                this.player.x <= obstacle.x + obstacle.w &&
+                this.player.y + this.player.h - 20 >= obstacle.y &&
+                this.player.y <= obstacle.y + obstacle.h
             )
         })
     },
 
-    //  
     stop() {
         clearInterval(this.interval)
     },

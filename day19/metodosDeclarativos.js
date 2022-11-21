@@ -3,7 +3,6 @@
 //     console.log(i)
 // }
 
-
 const numeros = [1, 0, 2]
 
 const result = numeros.forEach((numero, i) => {
@@ -21,16 +20,13 @@ const resSome = numeros.some((numero) => numero > 1)
 
 console.log(resSome);
 
-
-
 const perdiendoElThis = {
     name: "hola",
     getName: function () { 
         console.log(this)
         setTimeout(function () {
             console.log(this)
-        }, this, 3000)
-        
+        }, this, 3000) 
     }
 }
 
